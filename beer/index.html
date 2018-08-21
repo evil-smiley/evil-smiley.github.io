@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beer Match - Beer & Food Pairing App</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <div class="container" id="container">
+      <div class="container__item" id="item">
+        <div class="container__icon margin-bottom-small" id="beer-icon"><i class="fa fa-beer fa-2x"></i></div>
+        <form id="search-form" class="search-form" onsubmit="srchBeer(document.getElementById('food').value, event);">
+          <input id="food" type="text" placeholder="Enter food name" autocomplete="off" />
+          <button type="submit">Find me a beer</button>
+        </form>
+        <h1 class="heading-primary margin-top-medium" id="heading-primary">Tell us what you're eating</h1>
+        <h2 class="heading-secondary margin-top-small" id="heading-secondary">There's a beer for that!</h2>
+      </div>
+    </div>
+
+    <section class="hide margin-bottom-medium" id="beer-section">
+      <!--<div class="row">
+        <div class="col" onclick="window.location.href='#popup';">
+          <div class="beer">
+            <img src="119.png" class="beer__image" />
+            <div class="beer__img-overlay">
+              <div class="beer__name">Beer name</div>
+              <div class="beer__tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="beer">
+            <img src="119.png" class="beer__image" />
+            <div class="beer__img-overlay">
+              <div class="beer__name">Beer name</div>
+              <div class="beer__tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="beer">
+            <img src="119.png" class="beer__image" />
+            <div class="beer__img-overlay">
+              <div class="beer__name">Beer name</div>
+              <div class="beer__tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            </div>
+          </div>
+        </div>
+          <div class="col-1-of-4">
+            <div class="beer">
+              <img src="119.png" class="beer__image" />
+              <div class="beer__img-overlay">
+                <div class="beer__name">Beer name</div>
+                <div class="beer__tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              </div>
+            </div>
+          </div>
+      </div>-->
+    </section>
+
+    <section id="popup">
+      <!--<div class="popup">
+        <div class="popup__content">
+          <div class="popup__left">
+            <img src="119.png" alt="" class="popup__img">
+          </div>
+          <div class="popup__right">
+            <a href="#" class="popup__close">&times;</a>
+            <span class="popup__name">Name: Beer</span>
+            <div class="popup__desc margin-top-small">
+              Description: An avalanche of cross-continental hop varieties give this porter a complex spicy, resinous and citrusy aroma, with a huge malt bill providing a complex roasty counterpoint. Digging deeper into the flavour draws out cinder toffee, bitter chocolate and hints of woodsmoke.
+            </div>
+            <div class="popup__pairing margin-top-small">
+                <strong>Other Food Pairing(s): Blue cheese beef burger, Glazed short ribs, Chocolate cake</strong>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    </section>
+
+    <section class="error margin-top-big hide" id="error">
+      Sorry, no matches found. Please check your spelling or enter a new term.
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

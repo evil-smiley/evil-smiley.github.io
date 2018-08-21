@@ -1,0 +1,27 @@
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  text-align: center;
+  color: $color-dark-gray;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @include respond(tab-port) {
+    font-size: 3.5rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  text-align: center;
+  color: $color-dark-gray;
+  font-weight: 500;
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
+}
+

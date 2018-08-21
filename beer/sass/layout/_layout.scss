@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  @include respond(tab-port) {
+    margin-top: 5rem;
+    align-items: start;
+  }
+
+  &__item {
+    width: 80%;
+    height: 50%;
+  }
+
+  &__icon {
+    text-align: center;
+
+    .fa {
+      color: $color-dark-gray;
+    }
+
+    .fa-2x {
+      font-size: 5rem;
+
+      @include respond(tab-port) {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-horizontal;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include clearfix;
+
+  .col {
+    width: calc((100% - #{$gutter-vertical * 3})/4);
+    float: left;
+    background-color: #eee;
+    //position: relative;
+
+    @include respond(tab-port) {
+      width: calc((100% - #{$gutter-vertical * 1.5})/2);
+      margin-top: calc(#{$gutter-horizontal/2});
+      margin-left: calc(#{$gutter-vertical/2});
+    }
+
+    @include respond(phone) {
+      width: calc(100% - #{$gutter-vertical * 2});
+      margin-left: $gutter-vertical;
+      margin-right: $gutter-vertical;
+    }
+
+    &:not(:last-child) {
+      margin-right: $gutter-vertical;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+      }
+    }
+  }
+}

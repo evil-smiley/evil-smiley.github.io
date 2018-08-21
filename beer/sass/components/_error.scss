@@ -1,0 +1,11 @@
+.error {
+  text-align: center;
+  color: $color-dark-gray;
+  font-size: 3rem;
+
+  @include respond(tab-port) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+  }
+}
